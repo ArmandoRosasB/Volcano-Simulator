@@ -19,11 +19,11 @@ hold on
 
 %Datos proyectil (Cambian dependiendo el volcan)
 %En este caso se simulará el Volcan Nevado del Ruiz
-y0 = 5321; %Altura inicial (Altura del volcán Nevado del Ruiz)
+y0 = input("Ingresa la altura(m) del volcán: "); %Altura inicial en m
 v0 = input("Ingresa la velocidad (100-300 m/s): "); %Velocidad inicial
 an = deg2rad(input("Ingresa el angulo de salida " + ...
     "(10-70 grados o 100-160 grados): ")); %Ángulo de salida
-m = input("Ingresa la masa: "); %Masa
+m = input("Ingresa la masa(kg): "); %Masa
 delta = 0.1; %Incremento en el tiempo
 
 %Fuerza de arrastre
@@ -119,5 +119,3 @@ ylabel('Velocidad (m/s)')
 axis('tight')
 grid on
 hold on
-
-
